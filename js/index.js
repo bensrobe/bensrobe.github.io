@@ -6,3 +6,18 @@ function responsiveNav() {
         x.className = "navi";
     }
 }
+
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav a').addClass('shrink');
+    $('#brand').addClass('shrink');
+    $('nav ul').addClass('shrink');
+    $('nav').addClass('shrink');
+  } else {
+    $('nav a').removeClass('shrink');
+    $('#brand').removeClass('shrink');
+    $('nav ul').removeClass('shrink');
+    $('nav').removeClass('shrink');
+  }
+});

@@ -16,7 +16,6 @@ h1 {
 }
 
 /* Navigation Menu */
-
 nav {
 	position: fixed;
 	top: 0;
@@ -27,6 +26,8 @@ nav {
 }
 
 nav ul.navi {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 	margin: 0;
 	padding: 0 15px 0 15px;
 }
@@ -37,8 +38,10 @@ nav li {
 }
 
 nav a {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 	display: inline-block;
-	padding: 30px;
+	padding: 32px;
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
@@ -61,7 +64,7 @@ nav ul li.icon {
 /* Mobile friendly navigation */
 
 /* iPad size */
-@media (max-width: 880px) {
+@media (max-width: 900px) {
 	nav a {
 		padding: 10px;
 	}
@@ -76,6 +79,25 @@ nav ul li.icon {
 	}
 }
 
+/* Shrink nav bar on scroll classes */
+nav.shrink {
+	background: rgba(35, 113, 187, 1);
+}
+
+nav a.shrink {
+	padding: 10px;
+}
+
+#brand.shrink {
+	padding: 8px 0 8px 0;
+	font-size: 22px;
+	margin-left: 5px;
+}
+
+nav ul.shrink {
+	padding: 0 5px 0 5px;
+}
+
 
 /* Phone Size */
 @media (max-width: 680px) {
@@ -87,7 +109,6 @@ nav ul li.icon {
 
 	nav ul.navi.responsive li.icon {
 		position: absolute;
-		right: 15px;
 		top: 0;
 	}
 
@@ -190,7 +211,11 @@ hr {
 	}
 
 	.offer-card {
-		width: 100%;
+		width: 80%;
+	}
+
+	.offer-card:last-child {
+		margin-right: 20px;
 	}
 }
 
@@ -259,7 +284,7 @@ hr#alt-hr {
 	width: 200px;
 	height: 200px;
 	margin: 0 10px 20px 10px;
-	box-shadow: 10px 10px 5px rgba(19, 69, 117, 1);
+	box-shadow: 0px 10px 10px rgba(19, 69, 117, 1);
 }
 
 .works-img {
@@ -282,24 +307,3 @@ hr#alt-hr {
 		display: none;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
